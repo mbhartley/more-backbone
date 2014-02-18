@@ -25,6 +25,7 @@ var ListView = Backbone.View.extend({
 	}
 });
 
+
 var MainView = Backbone.View.extend({
 
 	className: 'jumbo-item',
