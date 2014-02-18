@@ -23,7 +23,6 @@ var ListView = Backbone.View.extend({
 		console.log('working');
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
 	}
-
 });
 
 
@@ -44,7 +43,6 @@ var MainView = Backbone.View.extend({
 	  console.log('newJumboTemplate', newJumboTemplate);
 	  this.$el.html(newJumboTemplate);
 	}
-
 });
 
 

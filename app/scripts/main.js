@@ -11,7 +11,6 @@ contacts.each(function(contact){
 
 });
 
-
 //contacts = a collection instance
 //i loop over each model in that collection
 //first parameter in the callback is the thing you are currently looking at as iterating (contact) could have been anything
