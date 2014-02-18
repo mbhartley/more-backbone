@@ -21,7 +21,7 @@ var ListView = Backbone.View.extend({
 	moveToJumbotron: function(){
 		new MainView({model: this.model})
 		console.log('working');
-		//document.body.scrollTop = document.documentElement.scrollTop = 0;
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
 	}
 
 });
