@@ -5,7 +5,7 @@ var ListView = Backbone.View.extend({
 	createTemplate: _.template($('#list-item-template').text()),
  
 	initialize: function(){
-	  $('.js-contact-list').prepend(this.el);   //i only need to get this.el into the DOM one time; a placeholder//
+	  $('.js-contact-list').append(this.el);   //i only need to get this.el into the DOM one time; a placeholder//
 	  this.render();
 	},
 
