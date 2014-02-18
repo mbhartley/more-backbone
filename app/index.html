@@ -39,8 +39,8 @@
 
             <div class="jumbotron">
                 <h2>Pick Your Preacher App</h2>
-                <p class="lead">Click on your favorite preacher below for more info!</p>
-                
+                <p class="lead">Choose your favorite preacher below for more info!</p>
+                <div class="jumboItemHere"></div>
             </div>
 
             <div class="row marketing">
@@ -61,6 +61,12 @@
           <h3><%= name %></h3>
           <img src="<%= avatar %>" style="width 100px;"></img>
           <h5>"<%= quote %>"</h5>
+          <button class="choosePreacher">Choose Me!</button>
+        </script>
+
+        <script type="text/template" id="jumbotron-template">
+          <img src= "<%= avatar %>" style="width 100px;"></img>
+          <h3> <%= name %> </h3>
         </script>
 
         <!-- build:js scripts/vendor.js -->
@@ -100,6 +106,7 @@
         <script src="scripts/fake-data.js"></script>
         <script src="scripts/contact-model.js"></script>
         <script src="scripts/list-view.js"></script>
+        <script src="scripts/main-view.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
