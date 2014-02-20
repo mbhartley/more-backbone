@@ -2,70 +2,28 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* Space out content a bit */
 body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Custom page header */
 .header {
     border-bottom: 1px solid #e5e5e5;
-
-    /* Make the masthead heading the same height as the navigation */
-    h3 {
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 40px;
-        padding-bottom: 19px;
-    }
 }
-
-/* Custom page footer */
+ 
 .footer {
     padding-top: 19px;
     color: #777;
-    border-top: 1px solid #e5e5e5;
 }
 
-.container-narrow > hr {
-    margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
 .jumbotron {
     text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-    .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-    }
+    color: rgb(96, 94, 94);
+    background-color: rgb(125, 142, 237);
+    margin: 0 auto;
+    position: relative;
 }
 
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
-    p + h4 {
-        margin-top: 28px;
-    }
-}
-
-/* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
         max-width: 730px;
@@ -82,16 +40,100 @@ body {
     /* Space out the masthead */
     .header {
         margin-bottom: 30px;
+        width: 100%;
     }
-    
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
+
+}
+.app-name, {
+    color: rgb(96, 94, 94);
+    font-size: 30px;
+    display: inline-block;
+    font-weight: 500;
 }
 
-.list-item {
+.app-credits {
+    color: rgb(96, 94, 94);
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 172px;
+}
+
+.welcome-preacher, .welcome-searcher {
+    font-size: 28px;
+    width: 340px;
+    background-color: rgb(159, 177, 212);
+    opacity: 0.7;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+
+.preacher-form {
+    display: none;
+}
+
+.reveal-preacher-form {
+    display: inherit;
+}
+
+.profile-instructions {
+    font-size: 22px;
+    color: rgb(96, 94, 94);
+    margin-top: 40px;
+}
+
+.searcher-instructions {
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 26px;
+    width: 524px;
+    text-align: center;
+    color: rgb(96, 94, 94);
+    margin-bottom: 40px;
+    display: none;
+}
+
+.searcher-instructions-reveal {
+    display: inherit;
+}
+
+.preacher-name {
+    margin-top: 20px;
+    font-size: 18px;
+    width:380px;
+    padding-left: 4px;
+}
+
+.preacher-quote {
+    margin-top: 20px;
+    font-size: 18px;
+    padding-left: 4px;
+}
+
+.preacher-bio {
+    margin-top: 20px;
+    font-size: 18px;
+    padding-left: 4px;
+}
+
+.preacherPhoto {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.add-preacher {
+    margin-top: 20px;
+}
+
+.lead {
+    margin-top: 40px;
+}
+
+.list-item, .jumbo-item {
    width: 660px;
+   text-align: center;
+   margin-top: 100px;
 }
 
 .choosePreacher {
@@ -107,4 +149,14 @@ body {
 .name {
     font-size: 40px;
 }
+
+.list-avatar {
+    width: 140px;
+    border-radius: 50%;
+}
+
+
+
+
+
 

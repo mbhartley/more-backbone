@@ -5,7 +5,8 @@ var ListView = Backbone.View.extend({
 	createTemplate: _.template($('#list-item-template').text()),
 
 	events: {
-		'click .choosePreacher': 'moveToJumbotron',
+	  'click .choosePreacher': 'moveToJumbotron',
+	  'click .deletePreacher': 'removePreacherProfile',
 	},
  
 	initialize: function(){
@@ -19,10 +20,16 @@ var ListView = Backbone.View.extend({
 	},
 
 	moveToJumbotron: function(){
-		new MainView({model: this.model})
-		console.log('working');
-		document.body.scrollTop = document.documentElement.scrollTop = 0;
-	}
+	  $('.searcher-instructions').toggle('reveal-searcher-instructions');
+	  new MainView({model: this.model});
+      document.body.scrollTop = document.documentElement.scrollTop = 100;
+      
+	},
+
+	removePreacherProfile: function(){
+	  this.el.remove();
+	  this.model.destroy();
+	},
 });
 
 
@@ -33,8 +40,8 @@ var MainView = Backbone.View.extend({
 	jumbotronTemplate: _.template($('#jumbotron-template').text()),
 
 	initialize: function(){
-		$('.jumboItemHere').prepend(this.el);
-		this.render();
+	  $('.jumboItemHere').prepend(this.el);
+	  this.render();
 	},
 
 	render: function(){
